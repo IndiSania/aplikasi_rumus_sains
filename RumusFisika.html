@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kalkulator Rumus Fisika</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Kalkulator Rumus Fisika</h1>
+
+    <select id="rumusSelector">
+      <option value="">🔽 Pilih Rumus</option>
+      <option value="kecepatan">Kecepatan (v = s / t)</option>
+      <option value="gaya">Gaya (F = m × a)</option>
+      <option value="energiKinetik">Energi Kinetik (Ek = ½ × m × v²)</option>
+    </select>
+
+    <div class="explanation" id="penjelasanRumus"></div>
+
+    <form id="formInput" style="display:none;">
+      <div id="inputFields"></div>
+      <button type="submit">🔍 Hitung</button>
+    </form>
+
+    <div class="result" id="hasilPerhitungan"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
